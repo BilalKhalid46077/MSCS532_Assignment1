@@ -1,31 +1,44 @@
 """
 MSCS532 Assignment 1
 Bilal Khalid
-Insertion Sort - Sorting Array In Descending Order
+Implementation of the Insertion Sort Algorithm that sorts numbers in monotonically decreasing order.
 
 """
 
-def Insert_Sort(arr):
+def Insertion_Sort(arr):
 
+    # Start from the second element
     for j in range(1, len(arr)):
 
         key = arr[j]
 
         i = j - 1
 
+        # Move elements of the array that are greater than key to one position ahead of their current position
         while i >= 0 and arr[i] < key:
             arr[i + 1] = arr[i]
             i -= 1
 
+        # Insert the key into its correct sorted position
         arr[i + 1] = key
 
     return arr
 
 
-numbers = [12, 5, 8, 19, 3, 15]
+def main():
 
-print("Original Array: ", numbers)
+    numbers = [12, 5, 8, 19, 3, 15]
 
-sorted_numbers = Insert_Sort(numbers)
+    print("=" * 45)
+    print("Insertion Sort: ")
+    print("=" * 45)
 
-print("Sorted Array in Descending Order: ", sorted_numbers)
+    print("\nOriginal Array: ", numbers)
+
+    Insertion_Sort(numbers)
+
+    print("\nSorted Array: ", numbers)
+
+
+if __name__ == "__main__":
+    main()
