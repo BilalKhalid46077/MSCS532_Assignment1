@@ -6,8 +6,23 @@
 
 MSCS532
 
-## Assignment
+## Description
 
-Implementation of the Insertion Sort Algorithm in Python.
+This project implements the Insertion Sort Algorithm in Python.
 
-The algorithm sorts an array in monotonically decreasing (descending) order.
+Unlike the traditional implementation that sorts in ascending order, this version sorts the array in **monotonically decreasing (descending) order**.
+
+## Programming Language
+
+Python 3.14.2
+
+## Files
+
+- `Insert_Sort.py` – Python implementation of Insertion Sort
+- `README.md` – Project documentation
+
+## How to Run
+
+```bash
+py Insert_Sort.py
+```
